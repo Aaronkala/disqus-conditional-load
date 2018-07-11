@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name:     Disqus Conditional Load
+ * Plugin Name:     Disqus Conditional Load for Gofore
  * Plugin URI:      https://dclwp.com
- * Description:     Disqus commenting system for WordPress with advanced features like like <strong>lazy load, shortcode</strong> etc.
+ * Description:     Disqus commenting system for WordPress with advanced features like like <strong>lazy load, shortcode</strong> etc. Customized for Gofore.
  * Version:         11.0.0
- * Author:          Joel James
+ * Author:          Joel James, <a href="http://aaronalex.fi">Aaron Hakala</a>
  * Author URI:      https://duckdev.com/
  * Donate link:     https://paypal.me/JoelCJ
  * License:         GPL-2.0+

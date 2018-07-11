@@ -22,14 +22,20 @@
 class Disqus_Public {
 
 	/**
-	 * Returns the Disqus identifier for a given post.
+	 * Returns the Disqus identifier for a given posts english version.
 	 *
 	 * @since     3.0
 	 * @param     WP_Post $post    The WordPress post to create the title for.
 	 * @return    string           The formatted identifier to be passed to Disqus.
 	 */
 	public static function dsq_identifier_for_post( $post ) {
-		return $post->ID . ' ' . $post->guid;
+		$current_lang = pll_current_language();
+		if ($current_lang != "en" && pll_get_post($post->ID, "en")) { // use same comment field for all languages.
+			$post_id = pll_get_post($post->ID, "en");
+		} else {
+			$post_id = $post->ID;
+		}
+		return 'gofore-'.$post_id;
 	}
 
 	/**
